@@ -1,0 +1,8 @@
+<dl>
+	<dt><label for="group_enable_edit_time">{{ lang('GROUP_ENABLE_EDIT_TIME') ~ lang('COLON') }}</label><br /><span>{{ lang('GROUP_ENABLE_EDIT_TIME_EXPLAIN') }}</span></dt>
+	<dd><input name="group_enable_edit_time" type="checkbox" value="1" class="radio" id="group_enable_edit_time" {{ GROUP_ENABLE_EDIT_TIME }} /></dd>
+</dl>
+<dl>
+	<dt><label for="group_edit_time">{{ lang('GROUP_EDIT_TIME') ~ lang('COLON') }}</label><br /><span>{{ lang('GROUP_EDIT_TIME_EXPLAIN') }}</span></dt>
+	<dd><input name="group_edit_time" type="number" id="group_edit_time" min="0" max="9999" value="{{ GROUP_EDIT_TIME }}" /> {{ lang('MINUTES') }}</dd>
+</dl>

@@ -1,0 +1,12 @@
+services:
+    _defaults:
+        autowire: true
+        bind:
+            $root_path: '%core.root_path%'
+            $php_ext: '%core.php_ext%'
+            $tables: '%tables%'
+
+    kaileymsnay.groupedittime.listener:
+        class: kaileymsnay\groupedittime\event\main_listener
+        tags:
+            - { name: event.listener }
